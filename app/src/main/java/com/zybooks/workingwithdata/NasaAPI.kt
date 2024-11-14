@@ -112,7 +112,7 @@ class NasaAPI : AppCompatActivity() {
         // Building URL for request.
         // logic here also ensures request is built correctly
         // and to get the correct response format.
-        var base_url = "https://api.nasa.gov/planetary/apod"
+        var base_url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY"
         var url = base_url +
                 "?thumbs=true&api_key=${BuildConfig.NASA_API_KEY}"
         // If there is count, try to convert, if worked, add count.
